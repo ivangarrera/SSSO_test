@@ -123,3 +123,36 @@ Si aun así sigue sin funcionar y da el mismo error, la solución consiste en cr
    - Ejecutamos de nuevo el programa (con atributos `user_db="ivan"` y `password="passwd"`) y funciona.
 
 #####*LINUX*
+
+  - Comprobamos que hemos importado bien la base de datos. Escribimos en la terminal:
+  
+  `mysql -h localhost -u root -p`
+  
+  - Introducimos la contraseña del usuario root y hacemos una consulta como por ejemplo:
+  
+  `select * from preguntasdb.preguntas;`
+  
+  En el caso de que no nos devuelva todos los registros de la base de datos, revisar la importación.
+  
+  - Cambiamos en la clase `Agente` los campos indicado, asignando `user_db=root`y `password` con el valor de nuestra contraseña root.
+  
+  Si después de ejecutar la aplicacion con esta configuracion sigue saliendo el mismo error, la solucion es la siguiente:
+  
+  - En la terminal, ejecutamos el siguiente comando: 
+  
+  `mysql -h localhost -u root -p` e introducimos la contraseña del usuario root.
+  
+  - Introducimos la siguiente query en la linea de comandos:
+  
+   `CREATE USER 'ivan'@'localhost' IDENTIFIED BY 'passwd';`
+   
+  - Otorgamos privilegios al usuario de la siguiente forma:
+  
+   `GRANT ALL PRIVILEGES ON * . * TO 'ivan'@'localhost';`
+   
+   - Refrescamos los privilegios escribiendo:
+   
+   `FLUSH PRIVILEGES;`
+   
+   - Ejecutamos de nuevo el programa (con atributos `user_db="ivan"` y `password="passwd"`) y funciona.  
+  
