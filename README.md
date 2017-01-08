@@ -27,6 +27,8 @@ Para que compile el proyecto, es necesario añadir la libreria que se encuentra 
 
 ##**COMO IMPORTAR Y EXPORTAR UNA BASE DE DATOS MySQL**
 
+####*LINUX*
+
 Para que el proyecto funcione, es necesario importar la base de datos `fichero.sql`. Para ello, lo primero que necesitamos es instalar `MySQL` en Linux. Procedemos de la siguiente forma:
 
 - Ejecutamos `sudo apt-get update` para actualizar los repositorios instalados.
@@ -37,3 +39,12 @@ Para que el proyecto funcione, es necesario importar la base de datos `fichero.s
 
 [¿Cómo importar una base de datos MySQL?](https://gist.github.com/kamikaze-lab/98e901d961db59fd0db8)
 
+####*WINDOWS*
+
+
+
+##***Q&A***
+
+- ¿Qué hacer si al ejecutar el programa en Eclipse sale el error `Error: No se ha encontrado la clase principal`?
+
+  Estando situados en el archivo `JFrameUserInterface.java`, hacer click en la pestaña `Run`, elegir la opción `Run As` y después elegir la opción `Java Application`.
