@@ -27,7 +27,13 @@ Para que compile el proyecto, es necesario añadir la libreria que se encuentra 
 
 ##**COMO IMPORTAR Y EXPORTAR UNA BASE DE DATOS MySQL**
 
-Para que el proyecto funcione, es necesario importar la base de datos `fichero.sql`, de la forma en la que se indica en el siguiente enlace: 
+Para que el proyecto funcione, es necesario importar la base de datos `fichero.sql`. Para ello, lo primero que necesitamos es instalar `MySQL` en Linux. Procedemos de la siguiente forma:
+
+- Ejecutamos `sudo apt-get update` para actualizar los repositorios instalados.
+
+- Ejecutamos `sudo apt-get install mysql-server` para instalar MySQL.
+
+- Una vez instalado MySQL, podemos importar nuestra base de datos como se muestra en el siguiente enlace:
 
 [¿Cómo importar una base de datos MySQL?](https://gist.github.com/kamikaze-lab/98e901d961db59fd0db8)
 
