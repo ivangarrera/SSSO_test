@@ -200,7 +200,7 @@ public class JFrameUserInterface extends JFrame {
         }
     }
     public Pregunta generarPreguntaRandom(){
-        int id = generarRandom(20);
+        int id = generarRandom(100);
         Pregunta p = null;
         try{
             if ((p=pregunta.read2(id))!=null) ;

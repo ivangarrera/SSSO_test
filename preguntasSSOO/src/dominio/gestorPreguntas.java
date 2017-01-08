@@ -16,7 +16,7 @@ public class gestorPreguntas {
         //gp.insertarPreguntas();
     }
     public void leerArchivo(){
-        String path = "/home/lenovo/Escritorio/pdb.txt";
+        String path = "/home/lenovo/Escritorio/ppp.txt";
         String pregunta, resp1,resp2,resp3,resp4,resp5;
         File file = new File(path);
         Scanner sc=null;
