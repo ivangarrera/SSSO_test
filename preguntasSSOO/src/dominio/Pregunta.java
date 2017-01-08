@@ -1,8 +1,8 @@
 package dominio;
 
-import persistencia.Agente;
-
 import java.util.Vector;
+
+import persistencia.Agente;
 
 /**
  * Created by lenovo on 28/12/16.

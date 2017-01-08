@@ -1,7 +1,5 @@
 package persistencia;
 
-import dominio.Pregunta;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -9,6 +7,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Vector;
+
+import dominio.Pregunta;
 
 public class Agente {
     //instancia del agente

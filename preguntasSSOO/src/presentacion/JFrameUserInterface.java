@@ -1,17 +1,20 @@
 package presentacion;
 
-import dominio.Pregunta;
-
+import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextPane;
+import javax.swing.JToggleButton;
 import javax.swing.border.EmptyBorder;
 
-
-import java.awt.Color;
-
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+import dominio.Pregunta;
 
 public class JFrameUserInterface extends JFrame {
 
